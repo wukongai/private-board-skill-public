@@ -7,12 +7,12 @@
 需要Node.js/npm、Git和支持Skill的AI工具。在产品项目目录执行：
 
 ```bash
-npx skills add https://github.com/wukongai/private-board-skill-public/tree/v1.0.0-rc14 --skill private-board --agent codex
+npx skills add wukongai/private-board-skill-public --skill private-board --agent codex
 ```
 
-Claude Code将`codex`换成`claude-code`；默认安装到当前项目，加`--global`才是用户范围。安装后新开会话，请AI确认读取`private-board`。当前命令固定预发布rc14，不自动追踪main或最新正式版。
+Claude Code将`codex`换成`claude-code`；默认安装到当前项目，加`--global`才是用户范围。安装后新开会话，请AI确认读取`private-board`。这条安装命令长期不变，获取公开发布仓库当前发行内容。目前为 rc14 预发布；已有安装不会自动升级，需要更新时在原安装范围重新运行，并让AI核对实际版本。
 
-[完整使用手册](https://aixiaoai.cloud/cases/cmvbo2zs200dbpo4dg1ig27eq) · [版本说明](https://github.com/wukongai/private-board-skill-public/releases/tag/v1.0.0-rc14)
+[完整使用手册](https://aixiaoai.cloud/cases/cmvbo2zs200dbpo4dg1ig27eq) · [版本说明](https://github.com/wukongai/private-board-skill-public/releases)
 
 > 请读取私董会Skill及我的产品定义和BP，诊断当前产品的商业逻辑。我以产品创作者身份参与。先给初诊和议程，同一个议题让相关幕僚交叉分析，由主持人每次只问我一个关键问题，等我回答。每个议题给阶段判断，最后给商业诊断与决策备忘录。
 
@@ -61,3 +61,11 @@ flowchart TD
 维护者另运行 `python3 -B -m unittest discover -s skills/private-board/tests -p "test_*.py" -v` 检查记录器和隔离无AEF运行。详见[rc14发布说明](docs/releases/v1.0.0-rc14.md)。
 
 本次公开包实际通过20项检查：包边界11项、记录器8项、隔离无AEF CLI smoke 1项。7个共用主持/交付/模板/记录器核心文件与私有rc14逐字节一致；基础商业框架仍是公开独立实现。以上不代表公开包已实跑14轮模型会议，也不代替人工验收。
+
+## 发布渠道约定
+
+本公开仓库的默认分支是用户安装渠道，只接收已封版并验证的 Skill 内容。研发候选在独立私有研发仓库维护，不直接进入此渠道。每次发布同时维护版本标签、Release 说明和默认分支；文档修订可以独立提交，但不改变已封版 Skill 内容。
+
+`skills add` 从仓库默认分支读取，并不自动查询 GitHub 最新 Release。发行维护者必须保证默认分支的 Skill 与本次对外 Release 对应；不能只建立 Release 而遗漏安装渠道。当前封版仍是预发布，不因使用稳定地址而变为正式稳定版。
+
+一般用户始终使用上方命令。审计、回归或回退需复现旧版时，才使用 `https://github.com/wukongai/private-board-skill-public/tree/v1.0.0-rc14` 这样的固定标签来源。更新前保留个人修改和会议记录。
