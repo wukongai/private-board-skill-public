@@ -8,3 +8,5 @@
 - [Board of Advisors](https://github.com/SimonTheSalesBooster/board-of-advisors)：职责视角与行动交接的思路。
 
 公开包不包含付费参考正文、私人会话、第三方课程清单及其适配快照。方法来源链接保留在方法卡；链接文章与他人项目不因本包许可证而被重新授权。本项目不是参考作者或人物本人的官方产品。
+
+任务边界规则采用同一项目作者维护的 aef-task-focus/v1 自包含公开副本；它是通用流程约束，不附带AEF题库或量表，也不需要AEF运行时。

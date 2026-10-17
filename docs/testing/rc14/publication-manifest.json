@@ -1,0 +1,122 @@
+[
+  {
+    "file": "long-14/transcript.json",
+    "source_sha256": "d8ce0ff7af910d45075fb5a88b82f8939a565d58c193c521ad4439fe85e48179",
+    "published_sha256": "ebbbc2dc413f30970e403a4c43ee4b94086625ed8da771dc0ab5671685e01d53",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "long-14/transcript.md",
+    "source_sha256": "57ef203b97cb216d1b3c8b1e571b77dc73ab1cfec9d8597f600b4a0448be9779",
+    "published_sha256": "d632a7cbc6f7608901188f0e335814721838ae1a74a600cdb85ab3d8f2baa109",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "long-14/meeting.md",
+    "source_sha256": "ca92fd06ab09b339dcc308fd1c494e0aa992178577f67171dabe3447ee86edd4",
+    "published_sha256": "ca92fd06ab09b339dcc308fd1c494e0aa992178577f67171dabe3447ee86edd4",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "long-14/public-bp.md",
+    "source_sha256": "32fc48b18fdb1b1675ab772336786644ab7c95da60216f761a89987c51f17b5c",
+    "published_sha256": "32fc48b18fdb1b1675ab772336786644ab7c95da60216f761a89987c51f17b5c",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "long-14/run-report.md",
+    "source_sha256": "48d68c8a2234959f839ffd64182e9f4c70ca493b939d548752c0288e07ba602e",
+    "published_sha256": "1bded2af9f9a84d18705c427838c80ec88a0654bd961eef3c5f4e2be6e987449",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "convergence-6/transcript.json",
+    "source_sha256": "b08adc4a6484fd9632edc032603d501a7ca8cd7aa9c0078aeb8cb61d55182d40",
+    "published_sha256": "775c6d2ebce3a1fcd483042221650a07eb93f9c562f8f58c81a92514d388b822",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "convergence-6/transcript.md",
+    "source_sha256": "a8a382eed96b50807804f4b586dd30b55bf4fe3c68ea6a35ff34a0a86037a313",
+    "published_sha256": "f1c856a8dc67b1208c2e8068368d4c616114ec5d055024c24e9431add981f137",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "convergence-6/meeting.md",
+    "source_sha256": "838fb5030ffd7e2cd77e0aa5e9f02a1bb0014126752380bb2ba7b79dd1f4917a",
+    "published_sha256": "838fb5030ffd7e2cd77e0aa5e9f02a1bb0014126752380bb2ba7b79dd1f4917a",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "convergence-6/public-bp.md",
+    "source_sha256": "87ec1085285cc7d844a4431f17d8f7f90f8e8d119fdb663e68a36fafa7f285f0",
+    "published_sha256": "87ec1085285cc7d844a4431f17d8f7f90f8e8d119fdb663e68a36fafa7f285f0",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "convergence-6/run-report.md",
+    "source_sha256": "c5f4b57961b36530dd5e1cad60ac002ac7b5eeb56aa3c21acfb78cc7a2b23143",
+    "published_sha256": "c5f4b57961b36530dd5e1cad60ac002ac7b5eeb56aa3c21acfb78cc7a2b23143",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-a/transcript.json",
+    "source_sha256": "5710db07648bb4d5c7c45d854b745bbfe2317bbd2fe0bea59dbd3e57e79d79ba",
+    "published_sha256": "c1cc571c9968e02fef117245861487d0867aae5a34f476b70216f360d1fd98c4",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-a/transcript.md",
+    "source_sha256": "8da60a6b6f23fa79acb9e421cdffa636e5a8e236a74f3ed389f66ecee250bd21",
+    "published_sha256": "470f0b1cc9f42aa7bccb6891a70a2d8ba313af2b4472a1267a48f83ca8bb9d83",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-a/meeting.md",
+    "source_sha256": "bba9f27952bbab76229530fa91ed43e69c1844024fe1dbddbedd1f65cce7a0c9",
+    "published_sha256": "bba9f27952bbab76229530fa91ed43e69c1844024fe1dbddbedd1f65cce7a0c9",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-a/public-bp.md",
+    "source_sha256": "9e0b815656ba8d397e0e11c19aa349bd6d945f197a1f9fe70faf8ade17b50439",
+    "published_sha256": "9e0b815656ba8d397e0e11c19aa349bd6d945f197a1f9fe70faf8ade17b50439",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-a/run-report.md",
+    "source_sha256": "ee1a219c9cca3636e0383819df3a391e5a7f76475a07d049bdebb62046aa6068",
+    "published_sha256": "ee1a219c9cca3636e0383819df3a391e5a7f76475a07d049bdebb62046aa6068",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-b/transcript.json",
+    "source_sha256": "f5f5f4243fc6e7205689c674c725b3ddae18c484f5d64ad404c7ad3fffa0b447",
+    "published_sha256": "b05080f8b73ec57bd30551896e27f27696fe6b83ed97c4c176b8c4d8ef3e582e",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-b/transcript.md",
+    "source_sha256": "be78977713d817996b96120ee36add3d3229464ecbc6e886fe7218aa6075e830",
+    "published_sha256": "8d25d2a7165eeabdb61f77a603d9b702ad64dbd73816f8f837b13d8116e5c340",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-b/meeting.md",
+    "source_sha256": "3d1634f56372c37b680094b6827adbb72ad01520d002442da54c08103501c238",
+    "published_sha256": "3d1634f56372c37b680094b6827adbb72ad01520d002442da54c08103501c238",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-b/public-bp.md",
+    "source_sha256": "9e0b815656ba8d397e0e11c19aa349bd6d945f197a1f9fe70faf8ade17b50439",
+    "published_sha256": "9e0b815656ba8d397e0e11c19aa349bd6d945f197a1f9fe70faf8ade17b50439",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  },
+  {
+    "file": "iteration-b/run-report.md",
+    "source_sha256": "7f5f90f9b3f912b08e2da9341720717510231d5e66b248abfcfc39d536c42038",
+    "published_sha256": "7f5f90f9b3f912b08e2da9341720717510231d5e66b248abfcfc39d536c42038",
+    "transformation": "redact machine paths; annotate omitted internal attachments; preserve synthetic business dialogue"
+  }
+]

@@ -19,8 +19,11 @@ def check(root):
         if not f.is_file():continue
         if any(x in rel.parts for x in ('vendor','.skill-engineering','candidates')):
             errors.append('excluded:'+str(rel))
-        if f.suffix not in ('.md','.yaml','.py') and f.name not in ('LICENSE','.gitignore'):
+        review_asset = rel.parts[:3] == ('docs', 'testing', 'rc14') and f.suffix in ('.html', '.png', '.json')
+        if f.suffix not in ('.md','.yaml','.py') and f.name not in ('LICENSE','.gitignore') and not review_asset:
             errors.append('unexpected:'+str(rel));continue
+        if review_asset and f.suffix == '.png':
+            continue
         text=f.read_text(encoding='utf-8')
         if LOCAL.search(text):errors.append('local-path:'+str(rel))
         if SECRET.search(text):errors.append('credential:'+str(rel))
@@ -45,6 +48,10 @@ class PublicBundle(unittest.TestCase):
     def test_credential(self):self.assertTrue(check(self.fixture('a.md','gh'+'p_'+'x'*30)))
     def test_symlink(self):
         r=self.fixture('a.md');(r/'linked.md').symlink_to(r/'a.md');self.assertTrue(check(r))
+    def test_unknown_binary_rejected(self):self.assertTrue(check(self.fixture('arbitrary.png')))
+    def test_private_manifest_rejected(self):self.assertTrue(check(self.fixture('skills/private-board/task-focus-source.json')))
+    def test_review_asset_text_still_scanned(self):
+        self.assertTrue(check(self.fixture('docs/testing/rc14/report.html', '/'+'Users'+'/person/private.txt')))
     def test_portable_layout(self):
         self.assertTrue((ROOT/'skills/private-board/SKILL.md').is_file())
         self.assertTrue((ROOT/'skills/private-board/references/business-framework.md').is_file())
