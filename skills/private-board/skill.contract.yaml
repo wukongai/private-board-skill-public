@@ -1,9 +1,9 @@
 name: private-board
-version: 1.0.0-rc8
+version: 1.0.0-rc9
 kind: orchestrator
 scope: direct/manual
 inputs: [commercial_goal, optional_definition_bp, optional_context, optional_session]
-outputs: [commercial_diagnosis, natural_agenda, one_main_question, chair_summary, conditional_judgment, verification_actions]
+outputs: [commercial_diagnosis, natural_agenda, one_main_question, chair_summary, cross_perspective_analysis, stage_judgment, decision_memo, conditional_judgment, verification_actions]
 stops: [user_pause, external_evidence_needed, no_new_information]
 forbidden: [fabricated_owner_answers, simulated_consensus_as_evidence, automatic_publish, unsupported_scoring]
 approvals: [record_write, installation, external_side_effects]

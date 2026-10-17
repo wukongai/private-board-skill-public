@@ -1,20 +1,20 @@
 # 私董会 Skill
 
-**1.0.0-rc8 · 公开预发布版**。让AI先读产品定义和BP，围绕商业问题主持一场逐轮诊断：主持人组织议程，幕僚从不同职责检查，案主提供真实回答并决定取舍。
+**1.0.0-rc9 · 公开预发布版**。让AI先读产品定义和BP，围绕商业问题主持一场逐轮诊断：主持人组织议程，幕僚从不同职责检查，案主提供真实回答并决定取舍。
 
 ## 命令安装与开始
 
 需要Node.js/npm、Git和支持Skill的AI工具。在产品项目目录执行：
 
 ```bash
-npx skills add https://github.com/wukongai/private-board-skill-public/tree/v1.0.0-rc8 --skill private-board --agent codex
+npx skills add https://github.com/wukongai/private-board-skill-public/tree/v1.0.0-rc9 --skill private-board --agent codex
 ```
 
-Claude Code将`codex`换成`claude-code`；默认安装到当前项目，加`--global`才是用户范围。安装后新开会话，请AI确认读取`private-board`。当前命令固定预发布rc8，不自动追踪main或最新正式版。
+Claude Code将`codex`换成`claude-code`；默认安装到当前项目，加`--global`才是用户范围。安装后新开会话，请AI确认读取`private-board`。当前命令固定预发布rc9，不自动追踪main或最新正式版。
 
-[完整使用手册](https://aixiaoai.cloud/cases/cmvbo2zs200dbpo4dg1ig27eq) · [版本说明](https://github.com/wukongai/private-board-skill-public/releases/tag/v1.0.0-rc8)
+[完整使用手册](https://aixiaoai.cloud/cases/cmvbo2zs200dbpo4dg1ig27eq) · [版本说明](https://github.com/wukongai/private-board-skill-public/releases/tag/v1.0.0-rc9)
 
-> 请读取私董会Skill及我的产品定义和BP，诊断当前产品的商业逻辑。我以产品创作者身份参与。先给初诊和议程，每次只问我一个问题，等我回答后再继续。
+> 请读取私董会Skill及我的产品定义和BP，诊断当前产品的商业逻辑。我以产品创作者身份参与。先给初诊和议程，同一个议题让相关幕僚交叉分析，由主持人每次只问我一个关键问题，等我回答。每个议题给阶段判断，最后给商业诊断与决策备忘录。
 
 没有BP也可使用已有产品资料。默认不启用人物思维包。需要自主报告时明确说“根据资料自行讨论并给报告，保留未知，不替我编答案”。
 
@@ -22,15 +22,15 @@ Claude Code将`codex`换成`claude-code`；默认安装到当前项目，加`--g
 
 ```mermaid
 flowchart TD
- A[读取产品定义与已有资料] --> B[主持人商业初诊与议程]
- B --> C[幕僚提出一个商业问题]
- C --> D[等待案主真实回答]
- D --> E[主持人小结与交接]
- E -->|继续澄清| C
- E -->|有足够依据| F[幕僚审议与条件判断]
- E -->|需要外部材料| G[安排验证行动]
- F --> G
- G --> H[回填原产品资料；带新证据再复核]
+ A[读取产品定义与BP] --> B[商业初诊与议程]
+ B --> C[同一议题：相关幕僚交叉分析]
+ C --> D[主持人提出一个关键问题]
+ D --> E[等待案主真实回答]
+ E --> F[小结与交叉检验]
+ F -->|仍有可澄清缺口| C
+ F -->|够判断或需外部证据| G[阶段判断与验证行动]
+ G -->|下一商业议题| C
+ G -->|本场收束| H[商业诊断与决策备忘录]
 ```
 
 职责、方法、可选人物思维包分开。前台只有自然议程、小结、交接和追问，内部编号与方法映射留后台。默认一个AI切换职责；复杂审议按工具能力和权限使用sub-agent，模拟不等于真人专家或独立实证。
