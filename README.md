@@ -1,14 +1,18 @@
 # 私董会 Skill
 
-**1.0.0-rc7 · 公开预发布版**。让AI先读产品定义和BP，围绕商业问题主持一场逐轮诊断：主持人组织议程，幕僚从不同职责检查，案主提供真实回答并决定取舍。
+**1.0.0-rc8 · 公开预发布版**。让AI先读产品定义和BP，围绕商业问题主持一场逐轮诊断：主持人组织议程，幕僚从不同职责检查，案主提供真实回答并决定取舍。
 
-## 下载与开始
+## 命令安装与开始
 
-- [下载页面与版本说明](https://github.com/wukongai/private-board-skill-public/releases/tag/v1.0.0-rc7)
-- [直接下载完整ZIP](https://github.com/wukongai/private-board-skill-public/releases/download/v1.0.0-rc7/private-board-1.0.0-rc7.zip)
-- [Skill入口](skills/private-board/SKILL.md)
+需要Node.js/npm、Git和支持Skill的AI工具。在产品项目目录执行：
 
-解压后保留完整 `skills/private-board` 目录，让支持本地文件的AI助手读取其中的 `SKILL.md`。也可按你的助手的Skill安装说明放入该完整目录；本包不自动安装。
+```bash
+npx skills add https://github.com/wukongai/private-board-skill-public/tree/v1.0.0-rc8 --skill private-board --agent codex
+```
+
+Claude Code将`codex`换成`claude-code`；默认安装到当前项目，加`--global`才是用户范围。安装后新开会话，请AI确认读取`private-board`。当前命令固定预发布rc8，不自动追踪main或最新正式版。
+
+[完整使用手册](https://aixiaoai.cloud/cases/cmvbo2zs200dbpo4dg1ig27eq) · [版本说明](https://github.com/wukongai/private-board-skill-public/releases/tag/v1.0.0-rc8)
 
 > 请读取私董会Skill及我的产品定义和BP，诊断当前产品的商业逻辑。我以产品创作者身份参与。先给初诊和议程，每次只问我一个问题，等我回答后再继续。
 
@@ -44,3 +48,7 @@ flowchart TD
 公开包检查：`python3 -B -m unittest discover -s tests -v`。检查包边界、文件链接和隐私风险，不代替真实商业效果评测。当前为预发布版，完整连续使用效果仍需验证。
 
 [公开范围审查](docs/publication-review.md) · [版本说明](CHANGELOG.md) · [来源归属](skills/private-board/references/sources.md) · [MIT许可](LICENSE)
+
+
+## 商业判断优先
+先围绕客户、购买理由、收费、成本、获客和竞争组织议程。技术与交互仅在确实改变经营选择、且无法用更粗约束回答时下钻。够形成条件判断就停，未决实现问题留待产品设计；缺外部证据转验证行动。

@@ -1,5 +1,5 @@
 name: private-board
-version: 1.0.0-rc7
+version: 1.0.0-rc8
 kind: orchestrator
 scope: direct/manual
 inputs: [commercial_goal, optional_definition_bp, optional_context, optional_session]
@@ -11,3 +11,18 @@ state: [intake, diagnosis, inquiry, deliberation, action, review, paused]
 delegates: [optional_authorized_external_assessment, conditional_subagents]
 tests: [tests/scenarios.md]
 utility_claim: false
+
+evaluation:
+  score_scope: structural_readiness
+  claims:
+    utility: false
+  case_portfolio:
+    success: tests/scenarios.md
+    failure: tests/scenarios.md
+    high_risk: tests/scenarios.md
+  baseline: Historical interaction-detail drift; not a no-skill controlled comparison
+  holdout: Not established; no generalization claim
+  negative_transfer: Preserve cost-risk questions, real-answer waiting and evidence limits
+  behavioral_results: Maintainer records actual isolated replays separately from static tests
+  independent_review: Review actual outputs before any utility claim
+  type_checks: [cross_stage_io, partial_failure, aggregation]
